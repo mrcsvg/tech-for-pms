@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktech_101_for_pms=self.webpackChunktech_101_for_pms||[]).push([[538],{1710:function(e){e.exports=JSON.parse('{"permalink":"/tech-for-pms/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

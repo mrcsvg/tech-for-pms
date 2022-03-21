@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktech_101_for_pms=self.webpackChunktech_101_for_pms||[]).push([[799],{5805:function(e){e.exports=JSON.parse('{"allTagsPath":"/tech-for-pms/blog/tags","slug":"/tech-for-pms/blog/tags/hello","name":"hello","count":2,"permalink":"/tech-for-pms/blog/tags/hello"}')}}]);
