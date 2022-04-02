@@ -4,9 +4,9 @@ name: Deploy to GitHub Pages
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
-on: workflow_dispatch
+on: push #workflow_dispatch
 
-
+    
 jobs:
   deploy:
     name: Deploy to GitHub Pages
@@ -18,6 +18,14 @@ jobs:
           node-version: 16.x
           cache: yarn
 
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            doc:
+            - 'docs/**'
+
+        if: steps.changes.outputs.docs == 'true'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
@@ -25,6 +33,7 @@ jobs:
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+        if: steps.changes.outputs.docs == 'true'
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
