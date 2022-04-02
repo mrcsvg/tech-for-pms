@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktech_101_for_pms=self.webpackChunktech_101_for_pms||[]).push([[414],{374:function(s){s.exports=JSON.parse('{"allTagsPath":"/tech-for-pms/blog/tags","slug":"/tech-for-pms/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/tech-for-pms/blog/tags/docusaurus"}')}}]);
